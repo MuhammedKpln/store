@@ -12,8 +12,8 @@
       "multimedia"
     ],
     "certificate": "",
-    "created": "2026-08-17T23:12:58+00:00",
-    "lastModified": "2026-08-17T23:12:58+00:00",
+    "created": "2026-08-17T23:15:42+00:00",
+    "lastModified": "2026-08-17T23:15:42+00:00",
     "translations": {
       "en": {
         "name": "Televisorium",
@@ -31,9 +31,9 @@
         "platformVersionSpec": ">=31 <=36",
         "minIntSize": 32,
         "download": "https://github.com/MuhammedKpln/televisorium/releases/download/1.1.0/televisorium-1.1.0.tar.gz",
-        "created": "2026-08-17T23:12:58+00:00",
+        "created": "2026-08-17T23:15:42+00:00",
         "licenses": [],
-        "lastModified": "2026-08-17T23:12:58+00:00",
+        "lastModified": "2026-08-17T23:15:42+00:00",
         "isNightly": false,
         "rawPhpVersionSpec": ">=8.1",
         "rawPlatformVersionSpec": ">=31 <=36",
