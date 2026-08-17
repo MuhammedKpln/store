@@ -12,8 +12,8 @@
       "multimedia"
     ],
     "certificate": "",
-    "created": "2026-08-17T23:15:42+00:00",
-    "lastModified": "2026-08-17T23:15:42+00:00",
+    "created": "2026-08-17T23:24:14+00:00",
+    "lastModified": "2026-08-17T23:24:14+00:00",
     "translations": {
       "en": {
         "name": "Televisorium",
@@ -31,13 +31,13 @@
         "platformVersionSpec": ">=31 <=36",
         "minIntSize": 32,
         "download": "https://github.com/MuhammedKpln/televisorium/releases/download/1.1.0/televisorium-1.1.0.tar.gz",
-        "created": "2026-08-17T23:15:42+00:00",
+        "created": "2026-08-17T23:24:14+00:00",
         "licenses": [],
-        "lastModified": "2026-08-17T23:15:42+00:00",
+        "lastModified": "2026-08-17T23:24:14+00:00",
         "isNightly": false,
         "rawPhpVersionSpec": ">=8.1",
         "rawPlatformVersionSpec": ">=31 <=36",
-        "signature": "",
+        "signature": "sJKWXAylbdsmyLezXkKizq76ucYxuglGc/s+BPXGGFwIC1aYlo/a7LQ0yoSZzuT+gOQ1/+zDhBA0Dz55mMQlKjk5fHXox8KjUkstmFfcZYkAn7xaphfsMjJ2wZB6oiIMu84lRzAazhdaIzp/+SEKnb92hJrjbzvF7OTBI50ag6v6CEDMLMrpBWtxC+rAt8PI+SI/FxHf+YlZmS/RV/4pyE5JkBt33ZqdRcw/txYRrlj3KfnTOc8Rb8aUt+9r5pJs6U8hbHjtst5ydOZtAmHh9tRWAK9XXqfW6aUr7Eg6EHbY++h/0kCbCYPp2w7KFN6dj+In+fBG4LMHhGkHXDO1CnB23JIoDM/1Pi22evNFcINBkaWqMJvVoYJuEBgxNpX0CgGkmvWL6i01x2OXj8Jw1lpyE1hkOtFpwdzUKe4nGLQPnRNHp434cZgll79qO6c75POu54/MKeJlmo8EZNGrYa1F9mNqjjwjLfPqDnuY+QYXcgij4z5fVAPUHQnoX8IL+f+KcxO633UFGT/h5GaD7H90993gs+rTJkWhIbUTY7bQ1s43bjVXMJlmsnRLC0e5LDlkicpWb9TbHfXrpTn/efp3qdIhbvcANykYu1H5rsyIhJnLiP8Tb7QTTy68yug61IAkni7vTzKvdcOUpRC6AyIp+LuIm+dSbKikQPhph+Q=",
         "translations": {
           "en": {
             "changelog": "- First release\n"

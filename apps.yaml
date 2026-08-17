@@ -48,8 +48,7 @@
       platformVersionSpec: ">= 31, <= 36"
       isNightly: false
       download: https://github.com/MuhammedKpln/televisorium/releases/download/1.1.0/televisorium-1.1.0.tar.gz
-      # file: ./dist/televisorium-1.1.0.tar.gz   # local archive -> auto signature
-      # key:  ./dist/televisorium.key            # or use --key on the CLI
+      file: ./dist/televisorium-1.1.0.tar.gz   # local archive -> auto signature
       signature: ""
       changelog: |
         - First release

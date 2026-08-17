@@ -95,6 +95,12 @@ def sign_archive(archive: Path, key: Path) -> str:
     return base64.b64encode(sig).decode()
 
 
+def resolve_path(p: str) -> Path:
+    """Resolve a `file:`/`key:` path; relative paths are rooted at the repo dir."""
+    path = Path(p)
+    return path if path.is_absolute() else (ROOT / path)
+
+
 def build_release(release: dict, app_id: str, index: int, key: Path | None) -> dict:
     missing = [f for f in REQUIRED_RELEASE_FIELDS if not release.get(f)]
     if missing:
@@ -106,10 +112,10 @@ def build_release(release: dict, app_id: str, index: int, key: Path | None) -> d
     # Auto-sign from a local archive when a private key is available.
     archive = release.get("file")
     if archive and (key or release.get("key")):
-        key_path = Path(release.get("key")) if release.get("key") else key
+        key_path = resolve_path(release["key"]) if release.get("key") else key
         if not key_path.exists():
             fail(f"app '{app_id}' release {version}: key not found at {key_path}")
-        archive_path = Path(archive)
+        archive_path = resolve_path(archive)
         if not archive_path.exists():
             fail(f"app '{app_id}' release {version}: archive not found at {archive_path}")
         signature = sign_archive(archive_path, key_path)
@@ -214,6 +220,16 @@ def main() -> None:
     apps = yaml.safe_load(APPS_SRC.read_text()) or []
     categories = yaml.safe_load(CATEGORIES_SRC.read_text()) or []
 
+    if args.key:
+        have_files = any(
+            r.get("file")
+            for app in apps
+            for r in app.get("releases", [])
+        )
+        if not have_files:
+            fail("--key given, but no release sets a local `file:` archive to sign. "
+                 f"Add e.g. `file: ./dist/<app>-<version>.tar.gz` to the release in {APPS_SRC.name}.")
+
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     apps_data = [build_app(app, i, args.key) for i, app in enumerate(apps)]
@@ -231,7 +247,7 @@ def main() -> None:
         print(f"wrote {OUT_DIR / 'categories.json'} ({len(categories)} categories)")
         unsigned = [
             f"{a['id']} v{r['version']}"
-            for a in apps
+            for a in apps_data
             for r in a["releases"]
             if not r.get("signature")
         ]
