@@ -1,0 +1,90 @@
+[
+  {
+    "id": "demoapp",
+    "authors": [
+      {
+        "name": "Muhammed",
+        "mail": "muhammed@example.com",
+        "homepage": "https://example.com"
+      }
+    ],
+    "categories": [
+      "tools"
+    ],
+    "certificate": "",
+    "created": "2026-08-17T22:59:53+00:00",
+    "lastModified": "2026-08-17T22:59:53+00:00",
+    "translations": {
+      "en": {
+        "name": "Demo App",
+        "summary": "A tiny app to prove the static store works.",
+        "description": "Demo App is a minimal Nextcloud application used to test self-hosted,\nstatically served app stores. It ships a settings section and does nothing\nelse, but the release pipeline demonstrates signing and versioning.\n"
+      }
+    },
+    "releases": [
+      {
+        "version": "0.4.2",
+        "phpExtensions": [],
+        "databases": [],
+        "shellCommands": [],
+        "phpVersionSpec": ">=8.0",
+        "platformVersionSpec": ">=24 <=30",
+        "minIntSize": 32,
+        "download": "https://github.com/example/demoapp/releases/download/v0.4.2/demoapp-0.4.2.tar.gz",
+        "created": "2026-08-17T22:59:53+00:00",
+        "licenses": [],
+        "lastModified": "2026-08-17T22:59:53+00:00",
+        "isNightly": false,
+        "rawPhpVersionSpec": ">=8.0",
+        "rawPlatformVersionSpec": ">=24 <=30",
+        "signature": "",
+        "translations": {
+          "en": {
+            "changelog": "- Fix crash when saving empty settings\n- Drop support for Nextcloud < 24\n"
+          }
+        },
+        "signatureDigest": "sha512"
+      },
+      {
+        "version": "0.4.1",
+        "phpExtensions": [],
+        "databases": [],
+        "shellCommands": [],
+        "phpVersionSpec": ">=7.4",
+        "platformVersionSpec": ">=20 <=29",
+        "minIntSize": 32,
+        "download": "https://github.com/example/demoapp/releases/download/v0.4.1/demoapp-0.4.1.tar.gz",
+        "created": "2026-08-17T22:59:53+00:00",
+        "licenses": [],
+        "lastModified": "2026-08-17T22:59:53+00:00",
+        "isNightly": false,
+        "rawPhpVersionSpec": ">=7.4",
+        "rawPlatformVersionSpec": ">=20 <=29",
+        "signature": "",
+        "translations": {
+          "en": {
+            "changelog": "- Initial public release"
+          }
+        },
+        "signatureDigest": "sha512"
+      }
+    ],
+    "screenshots": [
+      {
+        "url": "https://example.com/demoapp/main.png",
+        "smallThumbnail": "https://example.com/demoapp/main-thumb.png"
+      }
+    ],
+    "adminDocs": "https://example.com/demoapp/admin",
+    "userDocs": "https://example.com/demoapp/user",
+    "developerDocs": "https://example.com/demoapp/dev",
+    "discussion": "https://github.com/example/demoapp/discussions",
+    "issueTracker": "https://github.com/example/demoapp/issues",
+    "website": "https://example.com/demoapp",
+    "isFeatured": false,
+    "ratingRecent": 4.5,
+    "ratingOverall": 4.8,
+    "ratingNumRecent": 12,
+    "ratingNumOverall": 240
+  }
+]

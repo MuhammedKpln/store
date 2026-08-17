@@ -1,0 +1,27 @@
+# categories.yaml
+# One category per top-level entry. `name`/`description` are English defaults;
+# add a `translations` map to localize further (see `tools` below).
+
+- id: organization
+  name: Organization
+  description: Tools for organizing shared work, files, calendars and contacts.
+
+- id: tools
+  name: Tools
+  description: Everyday utilities and helpers.
+  translations:
+    de:
+      name: Werkzeuge
+      description: Alltägliche Hilfsmittel und Werkzeuge.
+
+- id: customization
+  name: Customization
+  description: Themes, branding and interface tweaks.
+
+- id: fun
+  name: Fun
+  description: Games and entertainment.
+
+- id: security
+  name: Security
+  description: Authentication, access control and hardening.

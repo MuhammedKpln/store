@@ -1,0 +1,51 @@
+[
+  {
+    "id": "organization",
+    "translations": {
+      "en": {
+        "name": "Organization",
+        "description": "Tools for organizing shared work, files, calendars and contacts."
+      }
+    }
+  },
+  {
+    "id": "tools",
+    "translations": {
+      "en": {
+        "name": "Tools",
+        "description": "Everyday utilities and helpers."
+      },
+      "de": {
+        "name": "Werkzeuge",
+        "description": "Alltägliche Hilfsmittel und Werkzeuge."
+      }
+    }
+  },
+  {
+    "id": "customization",
+    "translations": {
+      "en": {
+        "name": "Customization",
+        "description": "Themes, branding and interface tweaks."
+      }
+    }
+  },
+  {
+    "id": "fun",
+    "translations": {
+      "en": {
+        "name": "Fun",
+        "description": "Games and entertainment."
+      }
+    }
+  },
+  {
+    "id": "security",
+    "translations": {
+      "en": {
+        "name": "Security",
+        "description": "Authentication, access control and hardening."
+      }
+    }
+  }
+]
