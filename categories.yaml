@@ -25,3 +25,7 @@
 - id: security
   name: Security
   description: Authentication, access control and hardening.
+
+- id: multimedia
+  name: Multimedia
+  description: Media players, streaming and entertainment tracking.

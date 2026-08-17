@@ -1,90 +1,62 @@
 [
   {
-    "id": "demoapp",
+    "id": "televisorium",
     "authors": [
       {
-        "name": "Muhammed",
-        "mail": "muhammed@example.com",
-        "homepage": "https://example.com"
+        "name": "Muhammed Kaplan",
+        "mail": "mmuhammedkaplan0@gmail.com",
+        "homepage": "https://github.com/muhammedkpln"
       }
     ],
     "categories": [
-      "tools"
+      "multimedia"
     ],
     "certificate": "",
-    "created": "2026-08-17T22:59:53+00:00",
-    "lastModified": "2026-08-17T22:59:53+00:00",
+    "created": "2026-08-17T23:12:58+00:00",
+    "lastModified": "2026-08-17T23:12:58+00:00",
     "translations": {
       "en": {
-        "name": "Demo App",
-        "summary": "A tiny app to prove the static store works.",
-        "description": "Demo App is a minimal Nextcloud application used to test self-hosted,\nstatically served app stores. It ships a settings section and does nothing\nelse, but the release pipeline demonstrates signing and versioning.\n"
+        "name": "Televisorium",
+        "summary": "An app to keep track of your watchlist, tv series, movies. Similar to trakt.tv",
+        "description": "A Nextcloud app to keep track of your movies, TV shows and watchlist. Similar\nto trakt.tv.\n\nFeatures:\n- Add movies and TV shows to your library from The Movie Database (TMDb)\n- Organize titles into Watchlist, Watching, Watched, On hold and Dropped\n- Browse your library by status or media type (movies, TV shows)\n- Search titles in your library\n- Watch progress tracking per title with auto status updates\n- Episode tracking for TV shows, grouped by season\n- Import all episodes of a season from TMDb\n- Personal ratings per title\n- Per-user metadata language and API key for TMDb\n"
       }
     },
     "releases": [
       {
-        "version": "0.4.2",
+        "version": "1.1.0",
         "phpExtensions": [],
         "databases": [],
         "shellCommands": [],
-        "phpVersionSpec": ">=8.0",
-        "platformVersionSpec": ">=24 <=30",
+        "phpVersionSpec": ">=8.1",
+        "platformVersionSpec": ">=31 <=36",
         "minIntSize": 32,
-        "download": "https://github.com/example/demoapp/releases/download/v0.4.2/demoapp-0.4.2.tar.gz",
-        "created": "2026-08-17T22:59:53+00:00",
+        "download": "https://github.com/MuhammedKpln/televisorium/releases/download/1.1.0/televisorium-1.1.0.tar.gz",
+        "created": "2026-08-17T23:12:58+00:00",
         "licenses": [],
-        "lastModified": "2026-08-17T22:59:53+00:00",
+        "lastModified": "2026-08-17T23:12:58+00:00",
         "isNightly": false,
-        "rawPhpVersionSpec": ">=8.0",
-        "rawPlatformVersionSpec": ">=24 <=30",
+        "rawPhpVersionSpec": ">=8.1",
+        "rawPlatformVersionSpec": ">=31 <=36",
         "signature": "",
         "translations": {
           "en": {
-            "changelog": "- Fix crash when saving empty settings\n- Drop support for Nextcloud < 24\n"
-          }
-        },
-        "signatureDigest": "sha512"
-      },
-      {
-        "version": "0.4.1",
-        "phpExtensions": [],
-        "databases": [],
-        "shellCommands": [],
-        "phpVersionSpec": ">=7.4",
-        "platformVersionSpec": ">=20 <=29",
-        "minIntSize": 32,
-        "download": "https://github.com/example/demoapp/releases/download/v0.4.1/demoapp-0.4.1.tar.gz",
-        "created": "2026-08-17T22:59:53+00:00",
-        "licenses": [],
-        "lastModified": "2026-08-17T22:59:53+00:00",
-        "isNightly": false,
-        "rawPhpVersionSpec": ">=7.4",
-        "rawPlatformVersionSpec": ">=20 <=29",
-        "signature": "",
-        "translations": {
-          "en": {
-            "changelog": "- Initial public release"
+            "changelog": "- First release\n"
           }
         },
         "signatureDigest": "sha512"
       }
     ],
-    "screenshots": [
-      {
-        "url": "https://example.com/demoapp/main.png",
-        "smallThumbnail": "https://example.com/demoapp/main-thumb.png"
-      }
-    ],
-    "adminDocs": "https://example.com/demoapp/admin",
-    "userDocs": "https://example.com/demoapp/user",
-    "developerDocs": "https://example.com/demoapp/dev",
-    "discussion": "https://github.com/example/demoapp/discussions",
-    "issueTracker": "https://github.com/example/demoapp/issues",
-    "website": "https://example.com/demoapp",
+    "screenshots": [],
+    "adminDocs": "https://github.com/MuhammedKpln/televisorium#readme",
+    "userDocs": "https://github.com/MuhammedKpln/televisorium#usage",
+    "developerDocs": "",
+    "discussion": "",
+    "issueTracker": "https://github.com/MuhammedKpln/televisorium/issues",
+    "website": "https://github.com/MuhammedKpln/televisorium",
     "isFeatured": false,
-    "ratingRecent": 4.5,
-    "ratingOverall": 4.8,
-    "ratingNumRecent": 12,
-    "ratingNumOverall": 240
+    "ratingRecent": 0.0,
+    "ratingOverall": 0.0,
+    "ratingNumRecent": 0,
+    "ratingNumOverall": 0
   }
 ]

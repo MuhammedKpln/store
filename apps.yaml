@@ -5,54 +5,51 @@
 # To install via Nextcloud, each release must be signed and the app needs a
 # `certificate` (the public code-signing certificate issued for the app id).
 # If you have the release archive + private key locally you can set `file` and
-# `key` and run `python3 build.py --key app.key -k` to auto-compute the
-# signature and sha256 digest instead of filling them in by hand.
+# `key` and run `python3 build.py --key app.key` to auto-compute the signature.
 
-- id: demoapp
-  name: Demo App
-  summary: A tiny app to prove the static store works.
+- id: televisorium
+  name: Televisorium
+  summary: An app to keep track of your watchlist, tv series, movies. Similar to trakt.tv
   description: |
-    Demo App is a minimal Nextcloud application used to test self-hosted,
-    statically served app stores. It ships a settings section and does nothing
-    else, but the release pipeline demonstrates signing and versioning.
+    A Nextcloud app to keep track of your movies, TV shows and watchlist. Similar
+    to trakt.tv.
+
+    Features:
+    - Add movies and TV shows to your library from The Movie Database (TMDb)
+    - Organize titles into Watchlist, Watching, Watched, On hold and Dropped
+    - Browse your library by status or media type (movies, TV shows)
+    - Search titles in your library
+    - Watch progress tracking per title with auto status updates
+    - Episode tracking for TV shows, grouped by season
+    - Import all episodes of a season from TMDb
+    - Personal ratings per title
+    - Per-user metadata language and API key for TMDb
   certificate: ""
   authors:
-    - name: Muhammed
-      mail: muhammed@example.com
-      homepage: https://example.com
-  categories: [tools]
-  website: https://example.com/demoapp
+    - name: Muhammed Kaplan
+      mail: mmuhammedkaplan0@gmail.com
+      homepage: https://github.com/muhammedkpln
+  categories: [multimedia]
+  website: https://github.com/MuhammedKpln/televisorium
   docs:
-    admin: https://example.com/demoapp/admin
-    user: https://example.com/demoapp/user
-    developer: https://example.com/demoapp/dev
-  discussion: https://github.com/example/demoapp/discussions
-  issueTracker: https://github.com/example/demoapp/issues
-  screenshots:
-    - url: https://example.com/demoapp/main.png
-      smallThumbnail: https://example.com/demoapp/main-thumb.png
+    admin: https://github.com/MuhammedKpln/televisorium#readme
+    user: https://github.com/MuhammedKpln/televisorium#usage
+    developer: ""
+  discussion: ""
+  issueTracker: https://github.com/MuhammedKpln/televisorium/issues
   isFeatured: false
-  ratingRecent: 4.5
-  ratingOverall: 4.8
-  ratingNumRecent: 12
-  ratingNumOverall: 240
+  ratingRecent: 0.0
+  ratingOverall: 0.0
+  ratingNumRecent: 0
+  ratingNumOverall: 0
   releases:
-    - version: 0.4.2
-      phpVersionSpec: ">= 8.0"
-      platformVersionSpec: ">= 24, <= 30"
+    - version: 1.1.0
+      phpVersionSpec: ">= 8.1"
+      platformVersionSpec: ">= 31, <= 36"
       isNightly: false
-      download: https://github.com/example/demoapp/releases/download/v0.4.2/demoapp-0.4.2.tar.gz
-      # file: ./dist/demoapp-0.4.2.tar.gz   # local archive -> auto signature
-      # key:  ./dist/demoapp.key            # or use --key on the CLI
+      download: https://github.com/MuhammedKpln/televisorium/releases/download/1.1.0/televisorium-1.1.0.tar.gz
+      # file: ./dist/televisorium-1.1.0.tar.gz   # local archive -> auto signature
+      # key:  ./dist/televisorium.key            # or use --key on the CLI
       signature: ""
       changelog: |
-        - Fix crash when saving empty settings
-        - Drop support for Nextcloud < 24
-    - version: 0.4.1
-      phpVersionSpec: ">= 7.4"
-      platformVersionSpec: ">= 20, <= 29"
-      isNightly: false
-      download: https://github.com/example/demoapp/releases/download/v0.4.1/demoapp-0.4.1.tar.gz
-      signature: ""
-      changelog: |
-        - Initial public release
+        - First release

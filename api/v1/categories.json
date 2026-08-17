@@ -47,5 +47,14 @@
         "description": "Authentication, access control and hardening."
       }
     }
+  },
+  {
+    "id": "multimedia",
+    "translations": {
+      "en": {
+        "name": "Multimedia",
+        "description": "Media players, streaming and entertainment tracking."
+      }
+    }
   }
 ]
